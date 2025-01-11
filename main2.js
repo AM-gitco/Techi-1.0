@@ -318,12 +318,10 @@ function takeCommand(message) {
     voice.style.display = "none";
     
     // Greetings
-    if (message.includes("hi") || message.includes("hello") || message.includes("hey") || message.includes("hola") || message.includes("namaste") || message.includes("hay")) {
-        speak("Hello Maanam sir, How can I help you?");
-    }
+  
 
     // Self Introduction
-    else if (message.includes("who are you") || message.includes("what is your name") || message.includes("what's your name") || message.includes("tell me about yourself") || message.includes("hu r u")) {
+     if (message.includes("who are you") || message.includes("what is your name") || message.includes("what's your name") || message.includes("tell me about yourself") || message.includes("hu r u")) {
         speak("I am Techie, Your Virtual Assistant. I am here to assist you in your daily tasks, created by Maaanam Sujra at Tecrix in the supervision of Mr. Hamzaa.");
     }
 
@@ -454,7 +452,24 @@ else if (message.includes("cancel reminder")) {
 else if (message.includes("set reminder")) {
     setReminder();
 }
-
+else if (message.includes("tecrix") ){
+    speak("Tecrix is a cutting-edge software house specializing in advanced IT courses and digital services. They empower individuals and businesses with expertise in Generative AI, SEO, WordPress development, video editing, and more.At Tecrix, They blend technology with creativity to shape the future, offering innovative solutions and skill-building for tomorrow’s challenges.");
+}
+else if (message.includes("maanam") ){
+    speak("Maaanam Sujra is a digital marketing professional with a passion for creating engaging and effective digital experiences. She is currently working as a Digital Marketing Specialist at Tecrix, where she helps businesses build their online presence and grow their brand. She holds a Bachelor of Science degree in Marketing from the University of California, Los Angeles.");
+}
+else if (message.includes("about") ){
+    speak("I am Techie, Your Virtual Assistant. I am here to assist you in your daily tasks, created by Maaanam Sujra at Tecrix in the supervision of Mr. Hamzaa.");
+}
+else if (message.includes("help") ){
+    speak("I can assist you with various tasks such as opening websites, desktop applications, searching on the internet, setting reminders, and more. Just say the command and I will do my best to assist you.");
+}
+else if (message.includes("tell about Sir Hamzaa") || message.includes("tell about Mr. Hamzaa") || message.includes("tell about Mr. Hamzaa Sir") || message.includes("tell about Mr. Hamzaa Sir Hamzaa") || message.includes("tell about Mr. Hamzaa Sir Hamzaa") || message.includes("tell about Mr. Hamzaa Sir Hamzaa") || message.includes("tell about Mr. Hamzaa Sir Hamzaa") ){
+    speak("Mr. Hamza, the Senior Marketer at TEcrix Academy in Kotmomin, is an expert in digital marketing with a deep understanding of AI technologies. He is known for his innovative teaching approach, emphasizing real-world applications of AI in marketing. His ability to simplify complex concepts and his dedication to mentoring students make him a respected figure at the academy, helping students excel in AI-driven marketing.");
+}
+else if (message.includes("thank you") || message.includes("thank you sir") || message.includes("thank you maanam") || message.includes("thank you tecrix") || message.includes("thank you for your help") || message.includes("thank you for your assistance") || message.includes("thank you for your assistance sir") || message.includes("thank you for your assistance maanam") || message.includes("thank you for your assistance tecrix") || message.includes("thank you so much") || message.includes("thank you so much sir") || message.includes("thank you so much maanam") || message.includes("thank you so much tecrix") || message.includes("thank you very much") || message.includes("thank you very much sir") || message.includes("thank you very much maanam") || message.includes("thank you very much tecrix") || message.includes("thank you so much for your help") || message.includes("thank you so much for your assistance") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir") || message.includes("thank you so much for your assistance maanam") || message.includes("thank you so much for your assistance tecrix") || message.includes("thank you so much for your assistance sir")){
+    speak("You're welcome, Sir!");
+}
 // Volume Control (Optional)
 else if (message.includes("speak slower")) {
     speak("Sure, I will speak slower.");
@@ -468,6 +483,10 @@ else if (message.includes("speak slower")) {
 } else if (message.includes("decrease volume")) {
     speak("Sure, I will decrease the volume.");
     text_speak.volume = 0.5;
+}
+
+else if (message.includes("hi") || message.includes("hello") || message.includes("hey") || message.includes("hola") || message.includes("namaste") || message.includes("hay")) {
+    speak("Hello Maanam sir, How can I help you?");
 }
 
 // Exit Command (Optional)
