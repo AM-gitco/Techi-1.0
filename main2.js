@@ -413,7 +413,7 @@ function takeCommand(message) {
         speak(`Today's date is ${date}`);
     }
     // Weather Command (Optional)
-    else if (message.includes("weather")) {
+    else if (message.includes("tell about weather") || message.includes("weather")) {
         // Extract the location from the message or set a default location
         let location = message.split("weather in")[1]?.trim() || "London";
     
@@ -457,9 +457,6 @@ else if (message.includes("tecrix") ){
 }
 else if (message.includes("maanam") ){
     speak("Maaanam Sujra is a digital marketing professional with a passion for creating engaging and effective digital experiences. She is currently working as a Digital Marketing Specialist at Tecrix, where she helps businesses build their online presence and grow their brand. She holds a Bachelor of Science degree in Marketing from the University of California, Los Angeles.");
-}
-else if (message.includes("about") ){
-    speak("I am Techie, Your Virtual Assistant. I am here to assist you in your daily tasks, created by Maaanam Sujra at Tecrix in the supervision of Mr. Hamzaa.");
 }
 else if (message.includes("help") ){
     speak("I can assist you with various tasks such as opening websites, desktop applications, searching on the internet, setting reminders, and more. Just say the command and I will do my best to assist you.");
